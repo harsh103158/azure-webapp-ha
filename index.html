@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Web App Frontend - Server A</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e6f7ff; /* Light Blue */
+            text-align: center;
+            padding: 50px;
+        }
+        .container {
+            border: 5px solid #007bff;
+            padding: 30px;
+            display: inline-block;
+            box-shadow: 5px 5px 15px rgba(0,0,0,0.1);
+        }
+        h1 { color: #007bff; }
+        h2 { color: #555; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Hello from **Server A**! (app-frontend-01)</h1>
+        <h2>This instance is running in the Production Pool.</h2>
+        <p>You are seeing this page because the Load Balancer (Application Gateway) directed you here.</p>
+        <p>Deployment Slot Status: **PRODUCTION**</p>
+        <script>
+            console.log("Server A page loaded at: " + new Date().toISOString());
+        </script>
+    </div>
+</body>
+</html>
